@@ -1,0 +1,28 @@
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+.build/
+# Precompiled Headers
+*.gch
+*.pch
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+*.dll
+*.so
+*.so.*
+*.dylib
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+# Temporary files
+*.swp
+*~

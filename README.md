@@ -1,2 +1,2 @@
-# matlab-dglproject
-Some matlab projects concerning differential equations written in class.
+# matlab-examples
+Some matlab examples dealing with differential equations and statistics written in class.
