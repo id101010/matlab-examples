@@ -27,7 +27,7 @@ end
 % Schrittweite              h
 % Obere Intervallgrenze     T
 % Anfangswert               y0
-function [t y] = trapez(dgl, h, T, y0)
+function [t y] = eulerimpl(dgl, h, T, y0)
 
     t    = 0:h:T;       % Zeitvektor
     n    = length(t);   % Anzahl Schritte
@@ -35,6 +35,6 @@ function [t y] = trapez(dgl, h, T, y0)
     y(1) = y0;          % Startwert
     
     for k = 1:n-1
-        y(k+1) = y(k) + (h/2).*(y(k) + dgl(t(k),y(k)));
+        y(k+1) = y(k) + h.*(dgl(t(k), y(k)));
     end 
 end
